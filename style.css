@@ -199,7 +199,7 @@ a:hover {
 
 #skills{
     min-height: 100vh;
-    background-color: #111;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -234,9 +234,9 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     transition: 0.3s;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .skill-card:hover{
@@ -251,4 +251,144 @@ a:hover {
 
 .skill-card h3{
     font-size: 1.2rem;
+}
+
+/* footer */
+
+footer{
+    background-color: white;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-top: 1px solid #222;
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+footer p{
+    color: black;
+    font-size: 1rem;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redes a{
+    background-color: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.redes a:hover{
+    background-color: crimson;
+    transform: translateY(-5px);
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+
+    nav{
+        padding: 15px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px;
+    }
+
+    #hero{
+        text-align: center;
+        padding: 20px;
+    }
+
+    #hero h1{
+        font-size: 2.5rem;
+    }
+
+    #hero p{
+        font-size: 1.1rem;
+    }
+
+    #sobre-mi{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    #sobre-mi h2{
+        font-size: 2.2rem;
+    }
+
+    #sobre-mi p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .img img{
+        width: 250px;
+        height: auto;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .proyectos-container h2,
+    .skills-container h2{
+        font-size: 2.2rem;
+    }
+
+    .tecnologias{
+        gap: 20px;
+    }
+
+    .skill-card{
+        width: 140px;
+        height: 180px;
+    }
+
+    .skill-card img{
+        width: 60px;
+        height: 60px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .redes{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .redes a{
+        width: 200px;
+        text-align: center;
+    }
+
 }
